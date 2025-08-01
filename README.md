@@ -8,6 +8,8 @@
 
 A secure REST API implementation using Spring Security with JSON Web Token (JWT) authentication. This project demonstrates modern security best practices for protecting Spring Boot applications.
 
+---
+
 ## 📌 Features
 
 - **JWT-based authentication** (Access Token)
@@ -17,6 +19,8 @@ A secure REST API implementation using Spring Security with JSON Web Token (JWT)
 - Exception handling for security scenarios
 - Ready-to-use authentication endpoints
 
+---
+
 ## 🛠️ Tech Stack
 
 - **Java 17+**
@@ -25,6 +29,8 @@ A secure REST API implementation using Spring Security with JSON Web Token (JWT)
 - JJWT (Java JWT Library)
 - Lombok
 - H2 Database (for demonstration)
+
+---
 
 ## 🍵 JWT Structure
 
@@ -38,7 +44,7 @@ graph LR
     C --> G[iat:Timestamp]
     C --> H[exp:Expiration]
 ```
-
+---
 
 ## 🔐 Security Flow
 
@@ -60,6 +66,7 @@ sequenceDiagram
     Database-->>Server: User roles
     Server-->>Client: Return authorized data
 ```
+---
 
 ## 🚀 Getting Started
 
@@ -96,10 +103,10 @@ Clone the repository:
 ```bash
     mvn spring-boot:run
 ```
+---
 
 ## 📡 API Endpoints
 
----
 
 | Method     | Endpoint       | Description                    | Access             |
 |------------|----------------|--------------------------------|--------------------|
@@ -109,3 +116,4 @@ Clone the repository:
 | GET        | /hello/admin   | Admin greeting                 | ROLE_ADMIN         |
 
 ---
+
