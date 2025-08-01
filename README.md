@@ -117,6 +117,39 @@ Clone the repository:
 
 ---
 
+## 🔧 Testing with Postman
+
+**Register a new user:**
+
+```
+    POST http://localhost:8080/auth/register
+    Content-Type: application/json
+    
+    {
+    "username": "testuser",
+    "password": "password123",
+    "role": "USER"
+    }
+```
+
+**Login to get JWT:**
+
+```
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+"username": "testuser",
+"password": "password123"
+}
+```
+**Access protected endpoint:**
+
+```
+GET http://localhost:8080/hello/user
+Authorization: Bearer <your-jwt-token>
+```
+---
 
 ## 📬 Contact
 
