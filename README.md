@@ -61,3 +61,51 @@ sequenceDiagram
     Server-->>Client: Return authorized data
 ```
 
+## 🚀 Getting Started
+
+**Prerequisites**
+- Java 17+
+- Maven 3.8+
+- Your favorite IDE
+
+**Installation**
+
+Clone the repository:
+
+```bash
+    git clone https://github.com/kawindu2002/Spring-Security.git
+```
+
+**Navigate to project directory:**
+
+```bash
+   cd Spring-Security
+```
+
+**Configuration**
+
+1.Set your JWT secret in application.properties:
+
+```properties
+    jwt.secretKey=your-256-bit-secret-change-this-for-production
+    jwt.expiration=86400000 # 24 hours in milliseconds
+```
+
+**Running the Application**
+
+```bash
+    mvn spring-boot:run
+```
+
+## 📡 API Endpoints
+
+---
+
+| Method     | Endpoint       | Description                    | Access             |
+|------------|----------------|--------------------------------|--------------------|
+| POST       | /auth/register | Register new user              | Public             |
+| POST       | /auth/login    | Authenticate and get JWT token | Public             |
+| GET        | /hello/user    | User greeting                  | ROLE_USER          |
+| GET        | /hello/admin   | Admin greeting                 | ROLE_ADMIN         |
+
+---
