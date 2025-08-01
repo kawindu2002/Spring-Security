@@ -19,6 +19,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
  * Main security configuration class for Spring Security setup.
  * Configures authentication, authorization, and JWT filter integration.
  */
+
 @Configuration  // Marks this class as a Spring configuration class
 @EnableMethodSecurity  // Enables method-level security with @PreAuthorize, @PostAuthorize etc.
 @RequiredArgsConstructor  // Lombok: Generates constructor for final fields (dependency injection)
