@@ -10,6 +10,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import java.util.List;
+
 /**
  * Spring configuration class for setting up essential security components.
  * This class defines beans required for authentication and password encoding.

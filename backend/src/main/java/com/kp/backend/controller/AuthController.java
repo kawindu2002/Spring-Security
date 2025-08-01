@@ -40,7 +40,7 @@ public class AuthController {
                200, // HTTP status code equivalent (OK)
                "User registered Successfully",
                authService.register(registerDTO) // Delegates to service layer
-          );
+          ));
      }
      
      /**
