@@ -135,19 +135,19 @@ Clone the repository:
 **Login to get JWT:**
 
 ```
-POST http://localhost:8080/auth/login
-Content-Type: application/json
-
-{
-"username": "testuser",
-"password": "password123"
-}
+    POST http://localhost:8080/auth/login
+    Content-Type: application/json
+    
+    {
+    "username": "testuser",
+    "password": "password123"
+    }
 ```
 **Access protected endpoint:**
 
 ```
-GET http://localhost:8080/hello/user
-Authorization: Bearer <your-jwt-token>
+    GET http://localhost:8080/hello/user
+    Authorization: Bearer <your-jwt-token>
 ```
 ---
 
