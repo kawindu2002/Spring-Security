@@ -1,8 +1,6 @@
 # Spring-Security
 
-import Mermaid from '@theme/Mermaid';
-
-<Mermaid chart={`
+```mermaid
 graph LR
     A[JWT Structure] --> B[Header]
     A --> C[Payload]
@@ -11,5 +9,4 @@ graph LR
     C --> F[sub:Username]
     C --> G[iat:Timestamp]
     C --> H[exp:Expiration]
-`}/>
-
+```
