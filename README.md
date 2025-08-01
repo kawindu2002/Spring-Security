@@ -26,6 +26,8 @@ A secure REST API implementation using Spring Security with JSON Web Token (JWT)
 - Lombok
 - H2 Database (for demonstration)
 
+## 🍵 JWT Structure
+
 ```mermaid
 graph LR
     A[JWT Structure] --> B[Header]
