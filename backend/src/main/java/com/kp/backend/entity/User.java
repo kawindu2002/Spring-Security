@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
  * Lombok annotations are used to reduce boilerplate code while maintaining clarity.
  */
 @Entity // Marks this class as a JPA entity (maps to database table)
-@Table(name = "users") // Explicit table name (optional - defaults to class name)
+@Table(name = "user") // Explicit table name (optional - defaults to class name)
 @Data // Lombok: Generates getters, setters, toString, equals, and hashCode
 @NoArgsConstructor // Lombok: Generates no-args constructor
 @AllArgsConstructor // Lombok: Generates constructor with all arguments

@@ -55,16 +55,18 @@ public class SecurityConfig {
                .csrf(AbstractHttpConfigurer::disable)
                
                // Configure request authorization rules
-               .authorizeHttpRequests(auth -> auth
-                    // Allow unauthenticated access to authentication endpoints
-                    .requestMatchers("/auth/**").permitAll()
-                    // All other requests require authentication
-                    .anyRequest().authenticated()
+               .authorizeHttpRequests(auth ->
+                    auth
+                         // Allow unauthenticated access to authentication endpoints
+                         .requestMatchers("/auth/**").permitAll()
+                              // All other requests require authentication
+                              .anyRequest().authenticated()
                )
                
                // Configure stateless session management (no session created)
-               .sessionManagement(session -> session
-                    .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+               .sessionManagement(session ->
+                    session
+                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                )
                
                // Set our custom authentication provider
@@ -128,9 +130,9 @@ public class SecurityConfig {
      Cross-Site Request Forgery (CSRF) is an attack where a malicious site tricks a user into performing unwanted actions on an authenticated site.
      Why Disabled?
      Stateless APIs (using JWT) typically don’t need CSRF protection because:
-     JWTs are sent in the Authorization header (not cookies).
-     No session is maintained (stateless).
-     Enabled by default in Spring Security for form-based login.
+          JWTs are sent in the Authorization header (not cookies).
+          No session is maintained (stateless).
+          Enabled by default in Spring Security for form-based login.
      
      3.2. Request Authorization Rules
      .authorizeHttpRequests(auth -> auth
